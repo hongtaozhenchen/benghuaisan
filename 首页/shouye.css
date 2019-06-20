@@ -1,0 +1,799 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Microsft Yahei;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body{
+    width: 100%;
+    font-size: 20px;
+    background-color: black;
+}
+.top{
+    position: fixed;
+    top: 16px;
+    left: 0px;
+    width: 100%;
+    min-width: 1024px;
+    z-index: 1000;
+    font-size: 18px;
+}
+.top-wrap{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+}
+.top li{
+    width: 12.5%;
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none; 
+}
+#shouye{
+    background-color: #00c3ff;
+}
+.top-wrap li .top-btn {
+    display: block;
+    text-align: center;
+    width: 95%;
+    height: 50px;
+    color: white;
+    border: 2px solid #00c3ff;
+    background: rgba(0,0,0,0.25);
+    border-radius: 10px;
+    transform: skew(-10deg);
+    line-height: 50px;
+    box-sizing: content-box;
+    transition: 0.3s;
+}
+.top-wrap a:hover .top-btn{
+    border: 2px solid #ffc300;
+}
+.top-wrap a:active .top-btn{
+    background: #00c3ff;
+}
+.top-wrap li .top-btn text{
+    display: block;
+    transform: skew(10deg);
+}
+
+
+#main{
+    position: relative;
+    display: block;
+    top: 0;
+}
+section{
+    position: relative;
+    display: block;
+    min-width: 1024px;
+    overflow: hidden;
+    height: 1000px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+#section-1{
+    background: url(imges/section_1_bg_1.jpg) no-repeat #00c3ff;
+    background-size: auto 1000px;
+    background-position-x: 0;
+    background-position-y: 0;
+    color: white;
+    height: auto;
+}
+.cloudfloating{
+    animation: cloudfloating 120s linear 0s infinite forwards;
+    background: url(imges/section_1_bg_1.jpg);
+    width: 3840px;
+    height: 1000px;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+#scetion-1 .content{
+    width: 100%;
+    min-width: 1024px;
+}
+section .comtent{
+    position: relative;
+    margin: 0 auto;
+}
+#section-1 .content .main-content{
+    position: relative;
+    height: 740px;
+    width: 1024px;
+    margin: 0 auto;
+}
+.section-1-kiana{
+    position: absolute;
+    left: 0;
+    top: 142px;
+    width: 457px;
+    height: 858px;
+    background: url(imges/section_1_kiana.png);
+}
+#bh3-logo{
+    position: absolute;
+    left: 580px;
+    top: 120px;
+    width: 403px;
+    height: 288px;
+    background: url(imges/bh3logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bh3-slogan{
+    position: absolute;
+    left: 300px;
+    top: 460px;
+    width: 422px;
+    height: 146px;
+    background: url(imges/bh3_slogan.png);
+}
+#social-btn{
+    position: absolute;
+    left: 800px;
+    top: 580px;
+    width: 184px;
+    height: 170px;
+    background: url(imges/social_btn.png);
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: content-box;
+}
+.social:hover{
+    transform: scale(1.1,1.1);
+}
+.avatar-list{
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+    min-height: 360px;
+    background: url(imges/nav_list_bg.png) no-repeat;
+    background-position: top center;
+}
+.pv-btn{
+    display: inline-block;
+    height: 270px;
+    width: 400px;
+    text-align: center;
+}
+.pv-cover{
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 210px;
+    border: 5px white solid;
+    border-radius: 20px;
+    transform: skew(-10deg);
+    margin: 0 auto;
+}
+.pv-mask{
+    position: absolute;
+    top: 0;
+    width: 120%;
+    left: -10%;
+    height: 100%;
+    background: url(imges/skill_video_mask.png) rgba(0,0,0,0) no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    z-index: 1;
+    transform: skew(10deg);
+    transition: 0.5s;
+}
+.pv-cover .cover-pic{
+    position: absolute;
+    height: 210px;
+    left: 50%;
+    margin-left: -186px;
+    transform: skew(10deg);
+}
+.pv-cover .cover-pic#game-pv{
+    background-size: auto 100%;
+    background-position: center;
+}
+.pv-btn .pv-title{
+    height: 56px;
+    line-height: 56px;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+ul.nav-list{
+    width: 720px;
+    margin: 0 auto;
+}
+.upline{
+    width: 100%;
+    height: 50px;
+    background: url(imges/upline.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.nav-list .avatar{
+    display: inline-block;
+    transform: skew(-10deg);
+    width: 140px;
+    height: 140px;
+    border: 3px solid white;
+    border-radius: 16px;
+    margin: 5px;
+    list-style: none;
+    background: rgba(23, 203, 255, 0.8);
+    overflow: hidden;
+    cursor: pointer;
+    vertical-align: top;
+    transition: 0.4s;
+}
+.avatar:hover{
+    background: rgba(254,223,76,0.7);
+    transform: skew(-10deg) scale(1.1,1.1);
+}
+#youxia{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/youxia.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#bailian{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/bailian.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#shengnv{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/shengnv.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#yueguang{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/yueguang.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#qiangxi{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/qiangxi.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#feihong{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/feihong.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#yingwu{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/yingwu.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#guikai{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/guikai.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#zhanche{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/zhanche.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#shanchui{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/shanchui.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#xuedi{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/xuedi.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#ciyuan{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/ciyuan.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#jifeng{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/jifeng.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#shenhong{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/shenhong.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#kaixuan{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/kaixuan.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#meigui{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/meigui.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#wunv{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/wunv.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#wuwang{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/wuwang.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#yanba{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/xinghun.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#shiyue{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/shiyue.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#ziyuan{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/ziyuan.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#yinghuo{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/yinghuo.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#shenen{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/shenen.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#yinlang{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/yinlang.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#heiya{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/heiya.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#jinyang{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/jinyang.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#xunyu{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/xunyu.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#yuelun{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/yuelun.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#chiling{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/chiling.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#baiye{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/baiye.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#bingka{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/diliuye.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#yuexia{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/yuexia.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#zhanren{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/zhanren.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#nvwang{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/nvwang.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#yuanzui{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/yuanzui.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#zhenhong{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/zhenhong.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#qiangwei{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/qiangwei.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#yingtie{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/yingtie.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#yuehun{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/yuehun.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#rozaliya{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/rozaliya.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+#liliya{
+    position: relative;
+    width: 120%;
+    left: -10%;
+    height: 140px;
+    transform: skew(10deg);
+    background: url(imges/liliya.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+.downline{
+    width: 100%;
+    height: 50px;
+    background: url(imges/downline.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+#section-2{
+    background: url(imges/section_2_bg.jpg);
+    background-size: auto 100%;
+    background-position: center;
+    color: white;
+    padding-top: 2rem;
+    width: 100%;
+    height: 655px;
+}
+#index-news{
+    width: 1012px;
+    margin: auto;
+    padding-top: 88px;
+    padding-bottom: 90px;
+}
+#index-news-top{
+    height: 316px;
+    background-color: rgba(40,47,60,0.7);
+    border: 3px solid rgba(40,47,60,0.3);
+}
+#index-news-top-left{
+    float: left;
+    width: 474px;
+    height: 100%;
+}
+.slide-wrap{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+#index-news-top-right{
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    width: 490px;
+    margin-left: 20px;
+    position: relative;
+}
+#btn-news-more{
+    position: absolute;
+    display: block;
+    background-image: url(imges/more_news.png);
+    width: 12px;
+    height: 12px;
+    margin-top: 35px;
+    right: 0;
+}
+.news-nav{
+    clear: both;
+    border-bottom: 1px solid #4b869f;
+    height: 58px;
+}
+.news-nav li{
+    float: left;
+    list-style-type: none;
+}
+.news-nav li.on a{
+    color: #74dcff;
+    background-color: #3e4963;
+    border-bottom-color: #74dcff;
+}
+.news-nav li a{
+    display: block;
+    width: 86px;
+    height: 57px;
+    color: #fff;
+    text-align: center;
+    line-height: 57px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: transparent;
+}
+li:hover a{
+    color: #74dcff;
+}
+.index-news-list{
+    margin-top: 5px;
+}
+.index-news-list li{
+    font-size: 15px;
+    height: 41px;
+    line-height: 41px;
+    list-style-type: none;
+}
+.index-news-list a{
+    color: #FFF;
+}
+.index-news-enty-data{
+    float: right;
+}
+.index-news-enty-title{
+    float: left;
+    white-space: nowrap;
+    width: 293px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#news-bottom-info{
+    list-style-type: none;
+    margin-left: 9px;
+    margin-top: 10px;
+    color: transparent;
+}
+#news-bottom-info li{
+    position: relative;
+    width: 200px;
+    height: 149px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: -5px;
+}
+.pop-btn:hover{
+    opacity: 0.8;
+}
+
+
+.footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    height: 120px;
+}
+.footer-center{
+    margin: 0 auto;
+    position: relative;
+    width: 1024px;
+    height: 120px;
+    z-index: 9000;
+}
+.footer-center p{
+    color: #999;
+    font-size: 12px;
+}
+.footer p{
+    line-height: 20px;
+}
+.footer-center a{
+    color: #999;
+    text-decoration: none;
+}
+.footer-center a:hover{
+    color: #fff;
+}
